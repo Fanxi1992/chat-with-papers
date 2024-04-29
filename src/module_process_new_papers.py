@@ -1,14 +1,11 @@
 '''对用户上传的新文献进行分解向量化和存储，成功后返回文献名'''
 from pinecone import Pinecone, ServerlessSpec
-from PyPDF2 import PdfReader
-import pypdf
-import io
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyPDFLoader
+import pypdf
 from time import sleep
 import time
 from langchain_openai import OpenAIEmbeddings
-import os
 import re
 
 

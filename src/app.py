@@ -1,9 +1,6 @@
 import streamlit as st
 from langchain_core.messages import AIMessage, HumanMessage
 from langchain_openai import ChatOpenAI
-from langchain_core.output_parsers import StrOutputParser
-from langchain_core.prompts import ChatPromptTemplate
-# import pinecone
 from module_pinecone_doc_name import get_doc_names
 from module_process_new_papers import process_files
 from module_return_call_chunks import return_chunks

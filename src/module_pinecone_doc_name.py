@@ -1,8 +1,5 @@
 '''计算每一个人数据库已存向量所属的文件名列表，用于展示选择框'''
-from openai import OpenAI
 from pinecone import Pinecone
-import os
-from langchain_openai import OpenAIEmbeddings
 
 
 def get_doc_names(index_name):
